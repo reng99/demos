@@ -4,6 +4,7 @@
     "description": "repository for demos",
     "main": "index.js",
     "scripts": {
+        "dev": "gulp dev",
         "build": "gulp prod"
     },
     "keywords": [
@@ -15,6 +16,7 @@
         "gulp": "^3.9.1",
         "gulp-clean": "^0.4.0",
         "gulp-clean-css": "^3.9.2",
+        "gulp-connect": "^5.2.0",
         "gulp-htmlmin": "^4.0.0",
         "gulp-imagemin": "^4.1.0",
         "gulp-rename": "^1.2.2",

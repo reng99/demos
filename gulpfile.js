@@ -1,18 +1,38 @@
 var gulp = require('gulp')
+
 var uglify = require('gulp-uglify')
 var cleanCSS = require('gulp-clean-css')
 var rename = require('gulp-rename')
-var watch = require('gulp-watch')
 var clean = require('gulp-clean')
 var htmlmin =require('gulp-htmlmin')
 var replace = require('gulp-replace')
 var imagemin = require('gulp-imagemin')
-// gulp.task('watch',function(){
-//     gulp.start('js')
-//     gulp.watch(['src/js/**/*.js'],['js'])
-// })
 
+var watch = require('gulp-watch')
+var connect = require('gulp-connect')
 
+// 开发环境
+gulp.task('dev',function(){
+    gulp.start('auto_reload')
+})
+gulp.task('auto_reload',['connect'],function(){
+    gulp.start('watch')
+})
+gulp.task('connect',function(){
+    connect.server({
+        root: './',
+        port: 8000,
+        livereload: true , // 启动实时刷新
+    })
+})
+gulp.task('watch',function(){
+    gulp.watch(['src/**/*.html','src/**/*.css','src/**/*.js'],['refresh'])
+})
+gulp.task('refresh',function(){
+    gulp.src(['src/**/*.html','src/**/*.css','src/**/*.js'])
+        .pipe(gulp.dest('src'))
+        .pipe(connect.reload())
+})
 
 // 线上环境
 gulp.task('prod',['cleanDist'],function(){
