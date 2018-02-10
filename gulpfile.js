@@ -22,6 +22,7 @@ gulp.task('dev',['srcPath'],function(){
 gulp.task('srcPath',function(){
     return gulp.src(['./index.html'])
         .pipe(replace('./dist','./src'))
+        .pipe(replace('.min',''))
         .pipe(gulp.dest('./'))
 })
 gulp.task('auto_reload',['connect'],function(){
@@ -57,6 +58,9 @@ gulp.task('cleanDist',['distPath'],function(){
 gulp.task('distPath',function(){
     return gulp.src(['./index.html'])
         .pipe(replace('./src','./dist'))
+        .pipe(replace('.min',''))
+        .pipe(replace('.css','.min.css'))
+        .pipe(replace('.js','.min.js'))
         .pipe(gulp.dest('./'))
 })
 gulp.task('minJs',function(){
