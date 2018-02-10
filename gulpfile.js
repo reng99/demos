@@ -11,9 +11,19 @@ var imagemin = require('gulp-imagemin')
 var watch = require('gulp-watch')
 var connect = require('gulp-connect')
 
+var path = require('path')
+var config = require('./config')
+
+
+
 // 开发环境
-gulp.task('dev',function(){
-    gulp.start('auto_reload')
+gulp.task('dev',['srcPath'],function(){
+    gulp.start('srcPath','auto_reload')
+})
+gulp.task('srcPath',function(){
+    return gulp.src(['./index.html'])
+        .pipe(replace('./dist','./src'))
+        .pipe(gulp.dest('./'))
 })
 gulp.task('auto_reload',['connect'],function(){
     gulp.start('watch')
@@ -21,9 +31,10 @@ gulp.task('auto_reload',['connect'],function(){
 gulp.task('connect',function(){
     connect.server({
         root: './',
-        port: 8000,
+        port: config.port,
         livereload: true , // 启动实时刷新
     })
+    console.log('listen at http://localhost:' + config.port)
 })
 gulp.task('watch',function(){
     gulp.watch(['src/**/*.html','src/**/*.css','src/**/*.js'],['refresh'])
@@ -34,13 +45,20 @@ gulp.task('refresh',function(){
         .pipe(connect.reload())
 })
 
+
 // 线上环境
 gulp.task('prod',['cleanDist'],function(){
     gulp.start('minJs','minCss','minImg','handleHtml');
 })
-gulp.task('cleanDist',function(){
+gulp.task('cleanDist',['distPath'],function(){
+    process.env.NODE_ENV = 'prod'
     return gulp.src(['dist/'])
         .pipe(clean())
+})
+gulp.task('distPath',function(){
+    return gulp.src(['./index.html'])
+        .pipe(replace('./src','./dist'))
+        .pipe(gulp.dest('./'))
 })
 gulp.task('minJs',function(){
     return gulp.src(['src/js/**/*.js'])
