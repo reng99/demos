@@ -76,7 +76,7 @@ gulp.task('minCss',function(){
         .pipe(gulp.dest('dist/css'))
 })
 gulp.task('minImg',function(){
-    return gulp.src(['src/imgs/*'])
+    return gulp.src(['src/imgs/**/*'])
         .pipe(imagemin())
         .pipe(gulp.dest('dist/imgs'))
 })
