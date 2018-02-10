@@ -1,0 +1,59 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{
+    margin:0;
+    padding:0;
+    font-size:14px;
+}
+body{
+    background: url('http://reng99.cc/images/site_bg.jpg') repeat;
+    -webkit-text-size-adjust: 100%; /* webkit内核的浏览器(chrome)中,当在css中定义的中文font-size小于12px的时候,浏览器仍然使用12px,这时就可以用-webkit-text-size-adjust:none; */
+    position:relative;
+}
+a{
+    color:#333;
+    text-decoration:none;
+    cursor: pointer;
+}
+a:hover{color:#09c7d1;}
+em{font-style:normal;}
+li{list-style: none;}
+img{border:0;vertical-align: middle;}
+table{
+    border-collapse:collapse;/* 为表格设置合并边框模型： */
+    border-spacing:0;
+}
+p{word-break:break-all;}
+input,button,textarea,select{
+    outline: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -khtml-border-radius: 0;
+}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder { /* WebKit browsers */  
+    color:#b3b3b3;  
+}  
+input:-moz-placeholder,textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */  
+    color:#b3b3b3; 
+    opacity:  1;  
+}  
+input::-moz-placeholder,textarea::-moz-placeholder { /* Mozilla Firefox 19+ */  
+    color:#b3b3b3;  
+    opacity:  1;  
+}  
+input:-ms-input-placeholder,textarea:-ms-input-placeholder { /* Internet Explorer 10+ */  
+    color:#b3b3b3; 
+}  
+input,select,textarea{
+    color:#333;
+}
+textarea{
+    overflow: auto;
+    resize:none;
+}
+
+/*移除input中ie自带的删除功能和密码的眼睛图标*/
+input::-ms-clear,input::-ms-reveal{display:none;}
+/*覆盖谷歌浏览器中input智能选中时候的背景色*/
+input:-webkit-autofill{
+  -webkit-box-shadow: 0 0 0 300px white inset;
+}

@@ -11,7 +11,6 @@ var imagemin = require('gulp-imagemin')
 var watch = require('gulp-watch')
 var connect = require('gulp-connect')
 
-var path = require('path')
 var config = require('./config')
 
 
