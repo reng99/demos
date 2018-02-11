@@ -17,10 +17,13 @@
     max-width: 120px;
     padding: 2px;
     max-height: 120px;
-    border-radius: 60px;
+    border-radius: 62px;
     border: 1px solid #eee;
     margin: 0 auto;
     margin-top: 14px;
+}
+#index .avatar:hover{
+    border: 1px solid #09c7d1;
 }
 #index .name{
     display: block;

@@ -13,6 +13,9 @@ $ cd desktop
 # 克隆本项目
 $ git clone https://github.com/reng99/demos.git
 
+# 安装依赖
+$ npm install
+
 # 本地运行，运行后在浏览器上打开地址http://localhost:9000
 $ npm run dev
 
