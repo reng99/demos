@@ -40,3 +40,22 @@
         cancelAnimationFrame(id);
     });
 })()
+
+(function(){
+    var audio = document.getElementById('music');
+    audio.loop = true;
+    // 播放/暂停
+    $('.btn-play').click(function() {
+
+        console.log('rengjiaming')
+        // 检测播放是否已暂停
+        if(audio!==null){
+            if(audio.paused){
+                audio.play();
+
+            }else{
+                audio.pause();
+            }
+        }
+    });
+})()

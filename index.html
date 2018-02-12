@@ -3,8 +3,8 @@
 <head>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 	<title>demos</title>
-	<link rel="stylesheet" href="./src/css/common.css">
-	<link rel="stylesheet" href="./src/css/index.css">
+	<link rel="stylesheet" href="./dist/css/common.min.css">
+	<link rel="stylesheet" href="./dist/css/index.min.css">
 </head>
 <body>
 	<h2 style="font-size:16px;text-align:center;margin: 80px 0 20px 0;color: #999;">案例(demos)仓库&nbsp;<span style="color: #c00;font-size:10px;">建议pc端查看</span></h2>
@@ -12,21 +12,28 @@
 		<a href="https://github.com/reng99"> 
 			<img class="forkMe" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"/>
 		</a>
-		<a href="http://reng99.cc/">
+		<a href="http://reng99.cc/" target="_blank">
 			<img src="http://reng99.cc/asset/images/avatar.jpg" alt="avatar" class="avatar">
 		</a>
-		<a class="name" href="http://reng99.cc/about/" target="_blank">嘉明</a>
+		<a class="name" href="http://reng99.cc/about/">嘉明</a>
 		<p class="intro">积极的悲观主义者</p>
 		<dl class="inner">
 			<dt>相关的目录</dt>
-			<dd><a href="./src/html/demo/">参考的例子</a></dd>
-			<dd><a href="./src/html/demo/">demodemodemodemodemodemodemodemodemo</a></dd>
-			<dd><a href="./src/html/demo/">demo</a></dd>
+			<dd><a href="./dist/html/demo/">参考的例子</a></dd>
+			<dd><a href="./dist/html/demo/">demodemodemodemodemodemodemodemodemo</a></dd>
+			<dd><a href="./dist/html/demo/">demo</a></dd>
 		</dl>
 	</div>
+
+	<div id="music_box">
+		<audio src="./goodnight_miao.mp3" controls="controls" preload id="music"></audio>
+		<span class="btn-play" style="background: red;">
+			<span class="music-symbol">♫ music effect</span>
+		</span>
+	</div>
 	
-	<script src='./vendor/js/jquery.js'></script>
-	<script src='./vendor/js/underscore.js'></script>
-	<script src='./src/js/index.js'></script>
+	<script src='./vendor/js/jquery.min.js'></script>
+	<script src='./vendor/js/underscore.min.js'></script>
+	<script src='./dist/js/index.min.js'></script>
 </body>
 </html>
