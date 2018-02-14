@@ -29,7 +29,7 @@
     display: block;
     text-align: center;
     font-weight: bolder;
-    margin: 6px 0 4px 0;
+    margin: 2px 0 4px 0;
 }
 #index .intro{
     text-align: center;
@@ -53,4 +53,32 @@
     white-space:nowrap;
     text-overflow: ellipsis;
     font-size: 12px;
+}
+
+#index .effective{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 22px;
+    height: 16px;
+    margin: 0 auto;
+    margin-top: 4px;
+}
+#index .effective span{
+    display: block;
+    height: 5px;
+    width: 6px;
+    background: #09c7d1;
+    margin-right: 2px;
+    align-self: flex-end;
+}
+#index .effective span:last-child{
+    margin-right: 0;
+    height: 2px;
+}
+
+#music{
+    position: absolute;
+    left: -400px ;
+    top: 0;
 }

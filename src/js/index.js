@@ -29,33 +29,34 @@
     var deg = 0;
     var id ;
     var el = $('.avatar');
+    var effctive = $('#index .effective');
+    var audio = document.getElementById('music');
+    var timer = null;
+    audio.loop = true;
+    effctive.find('span').css('background','#fff');
     el.mouseenter(function(){
         var self = this;
+        audio.play();
+        effctive.find('span').css('background','#09c7d1');
+        timer = setInterval(function(){
+                var _index = Math.floor(3 * Math.random());
+                var _height = Math.ceil(16 * Math.random());
+                effctive.find('span').eq(_index).css('height',_height+'px');
+            },500)
         requestAnimationFrame(function change(){
             self.style.transform = 'rotate('+ (++deg) +'deg)';
             id = requestAnimationFrame(change);
         })
     });
     el.mouseleave(function(){
+        audio.pause();
+        effctive.find('span').css('background','#fff');
+        clearInterval(timer);
         cancelAnimationFrame(id);
     });
-})()
+})();
 
 (function(){
-    var audio = document.getElementById('music');
-    audio.loop = true;
-    // 播放/暂停
-    $('.btn-play').click(function() {
-
-        console.log('rengjiaming')
-        // 检测播放是否已暂停
-        if(audio!==null){
-            if(audio.paused){
-                audio.play();
-
-            }else{
-                audio.pause();
-            }
-        }
-    });
-})()
+    
+    
+})();
