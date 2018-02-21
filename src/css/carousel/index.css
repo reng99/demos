@@ -69,15 +69,15 @@
   }
   #carousel .banner .pre {
     margin-left: -640px;
-    background: url(../../imgs/carousel/arrow.png) no-repeat 0 0;
+    background: url(../../../imgs/carousel/arrow.png) no-repeat 0 0;
   }
   #carousel .banner .pre:hover {
-    background: url(../../imgs/carousel/arrow.png) no-repeat 0 -60px;
+    background: url(../../../imgs/carousel/arrow.png) no-repeat 0 -60px;
   }
   #carousel .banner .next {
     margin-left: 590px;
-    background: url(../../imgs/carousel/arrow.png) no-repeat -60px 0;
+    background: url(../../../imgs/carousel/arrow.png) no-repeat -60px 0;
   }
   #carousel .banner .next:hover {
-    background: url(../../imgs/carousel/arrow.png) no-repeat -60px -60px;
+    background: url(../../../imgs/carousel/arrow.png) no-repeat -60px -60px;
   }

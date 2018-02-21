@@ -31,8 +31,14 @@ $ npm run build
 
 2. vendor文件夹存放的是第三方插件，我这里是对同一个文件进行不同命名，方便两个环境的引用，开发环境引用非`.min`的文件啦。您可以根据实际情况引用第三方库，您也可以在次文件上添加，请命名规范--`filename.min.js & filename.js || filename.min.css & filename.css`
 
-3. 其他的文件请尽量别改动啊
+3. html和css文件中图片引用请用相对路径（css文件中的imgs引用有点问题，请在运行npm run dev前加多一层`../`）
+
+4. 其他的文件请尽量别改动啊
 
 ## 目录
 
-有待完善
+[轮播图片](http://reng99.cc/demos/dist/html/carousel/)
+
+## 遗留的问题
+
+1. npm run dev 的css文件的背景图的路径不正确，待改正
