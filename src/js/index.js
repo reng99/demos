@@ -55,8 +55,3 @@
         cancelAnimationFrame(id);
     });
 })();
-
-(function(){
-    
-    
-})();
