@@ -37,7 +37,9 @@ $ npm run build
 
 ## 目录
 
-[轮播图片](http://reng99.cc/demos/dist/html/carousel/)
+[1. 循环轮播图线上地址](http://reng99.cc/demos/dist/html/carousel/)
+
+![carousel_demo.gif](./images/carousel_demo.gif)
 
 ## 遗留的问题
 
