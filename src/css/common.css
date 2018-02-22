@@ -3,10 +3,12 @@ body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,s
     padding:0;
     font-size:14px;
 }
+html{
+    position: relative;
+}
 body{
     background: url('http://reng99.cc/images/site_bg.jpg') repeat;
     -webkit-text-size-adjust: 100%; /* webkit内核的浏览器(chrome)中,当在css中定义的中文font-size小于12px的时候,浏览器仍然使用12px,这时就可以用-webkit-text-size-adjust:none; */
-    position:relative;
 }
 a{
     color:#333;
