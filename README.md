@@ -41,6 +41,10 @@ $ npm run build
 
 ![carousel_demo.gif](./images/carousel_demo.gif)
 
+[2. 模态框弹出层](http://reng99.cc/demos/dist/html/modal/)
+
+![modal_demo.gif](./images/modal_demo.gif)
+
 ## 遗留的问题
 
 1. npm run dev 的css文件的背景图的路径不正确，待改正
