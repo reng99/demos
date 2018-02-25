@@ -37,13 +37,17 @@ $ npm run build
 
 ## 目录
 
-[1. 循环轮播图线上地址](http://reng99.cc/demos/dist/html/carousel/)
+[1. 循环轮播图](http://reng99.cc/demos/dist/html/carousel/)线上地址
 
 ![carousel_demo.gif](./images/carousel_demo.gif)
 
-[2. 模态框弹出层](http://reng99.cc/demos/dist/html/modal/)
+[2. 模态框弹出层](http://reng99.cc/demos/dist/html/modal/)线上地址
 
 ![modal_demo.gif](./images/modal_demo.gif)
+
+[3. 查看图片](http://reng99.cc/demos/dist/html/scaleImg/)线上地址
+
+![scaleImg_demo.gif](./images/scaleImg_demo.gif)
 
 ## 遗留的问题
 
