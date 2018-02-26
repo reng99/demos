@@ -1,0 +1,55 @@
+
+#area{
+	width: 360px;
+	margin: 0 auto;
+	background: #666;
+}
+#area .container .show{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#area .container .show div{
+	width:118px;
+	background: #fff;
+	border: 1px solid #999;
+	text-align: center;
+	font-size: 13px;
+	height: 30px;
+	line-height: 30px;
+	font-weight: bold;
+}
+#area .container .show div:hover{
+	cursor: pointer;
+	color: #09c7d1;
+}
+#area .container .data{
+	width:358px;
+	height: auto;
+	border: 1px solid #999;
+	border-top: none;
+	padding: 20px 0;
+	background: #fff;
+}
+#area .container .data .hint{
+	color: #09c7d1;
+	text-align: center;
+	font-size: 13px;
+}
+#area .container .data ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#area .container .data ul li{
+	list-style: none;
+	font-size: 13px;
+	padding: 5px 10px;
+}
+#area .container .data ul li:hover{
+	cursor: pointer;
+	color: #09c7d1;
+}

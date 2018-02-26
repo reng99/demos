@@ -11,6 +11,8 @@ var imagemin = require('gulp-imagemin')
 var watch = require('gulp-watch')
 var connect = require('gulp-connect')
 
+var babel =require('gulp-babel')
+
 var config = require('./config')
 
 
@@ -65,6 +67,7 @@ gulp.task('distPath',function(){
 })
 gulp.task('minJs',function(){
     return gulp.src(['src/js/**/*.js'])
+        .pipe(babel())
         .pipe(uglify())
         .pipe(rename({extname: '.min.js'}))
         .pipe(gulp.dest('dist/js'))
