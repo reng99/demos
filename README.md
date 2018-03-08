@@ -49,6 +49,10 @@ $ npm run build
 
 ![area_demo.gif](./images/area_demo.gif)
 
+[5. 休闲游戏-五子棋](http://reng99.cc/demos/dist/html/gobang/)线上地址
+
+![gobang_demo.gif](./images/gobang_demo.gif)
+
 ## 遗留的问题
 
 1. npm run dev 的css文件的背景图的路径不正确，待改正
