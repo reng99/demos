@@ -55,7 +55,7 @@ $ npm run build
 
 [6. 二级导航展示](http://reng99.cc/demos/dist/html/secondNav/)线上地址
 
-![secondNav_demo.gif](./images/secondsNav_demo.gif)
+![secondNav_demo.gif](./images/secondNav_demo.gif)
 
 ## 遗留的问题
 
