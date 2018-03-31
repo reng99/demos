@@ -1,70 +1,17 @@
 <!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"><title>demos</title><link rel="stylesheet" href="../../css/common.min.css"><style>/* nav部分 */
-		#header{
-		height: 82px;
-		width: 1200px;
-		margin: 0 auto;
-		}
-		#heder .logo{
-		display: block;
-		float: left;
-		}
-		#header .logo img{
-		width: 268px;
-		height: 70px;
-		margin-top: 6px;
-		}
-		#header .nav{
-		float: right;
-		height: 70px;
-		}
-		#header .nav>li{
-		float: left;
-		margin-left: 38px;
-		line-height: 80px;
-		border-bottom: 2px solid #fff;
-		padding: 0 10px;
-		font-size: 18px;
-		position: relative;
-		}
-		#header .nav>li>a{
-		width: 100%;
-		height: 80px;
-		display: block;
-		}
-		#header .nav>li:hover{
-		border-bottom: 2px solid #0e6497;
-		}
-		#header .nav li .sub_nav{
-		position:absolute;
-		top:82px;
-		left:0;
-		display: none;
-		z-index: 999;
-		width: 100%;
-		}
-		#header .sub_nav li{
-		font-size: 12px;
-		color: #fff;
-		margin-left: 0;
-		width: 100%;
-		text-align: center;
-		height: 35px;
-		line-height: 36px;
-		background: #0e6497;
-		border-bottom: 1px solid #999;
-		padding: 0;
-		}
-		#header .sub_nav li a{
-		width: 100%;
-		height: 36px;
-		color: #fff;
-		}
-		#header .nav .active{
-		border-bottom: 2px solid #0e6497;
-		}
-		#header .nav .active>a{
-		color: #0e6497;
-		}</style></head><body><header id="header"><a href="javascript:;" class="logo"><img src="../../imgs/secondNav/logo.png" alt="logo"></a><ul class="nav"><li><a href="javascript:;">首页</a></li><li><a href="javascript:;">关于仁德</a><ul class="sub_nav"><li><a href="javascript:;">二级项目</a></li><li><a href="javascript:;">二级项目</a></li></ul></li><li class="active"><a href="javascript:;">公益项目</a><ul class="sub_nav"><li><a href="javascript:;">二级项目</a></li><li><a href="javascript:;">二级项目</a></li><li><a href="javascript:;">二级项目</a></li></ul></li><li><a href="javascript:;">信息公开</a></li><li><a href="javascript:;">加入我们</a></li></ul></header><script type="text/javascript" src="../../../vendor/js/jquery.min.js"></script><script>$("#header .nav>li").hover(function(){
+		#header{height: 82px;width: 100%;background: #fff;}
+		.container{width: 1200px;height: 82px;margin: 0 auto;}
+		#heder .logo{display: block;float: left;}
+		#header .logo img{width: 268px;height: 70px;margin-top: 6px;}
+		#header .nav{float: right;height: 70px;}
+		#header .nav>li{float: left;margin-left: 38px;line-height: 80px;border-bottom: 2px solid #fff;padding: 0 10px;font-size: 18px;position: relative;}
+		#header .nav>li>a{width: 100%;height: 80px;display: block;}
+		#header .nav>li:hover{border-bottom: 2px solid #0e6497;}
+		#header .nav li .sub_nav{position:absolute;top:82px;left:0;display: none;z-index: 999;width: 100%;}
+		#header .sub_nav li{font-size: 12px;color: #fff;margin-left: 0;width: 100%;text-align: center;height: 35px;line-height: 36px;background: #0e6497;border-bottom: 1px solid #999;padding: 0;}
+		#header .sub_nav li a{width: 100%;height: 36px;color: #fff;}
+		#header .nav .active{border-bottom: 2px solid #0e6497;}
+		#header .nav .active>a{color: #0e6497;}</style></head><body><header id="header"><div class="container"><a href="javascript:;" class="logo"><img src="../../imgs/secondNav/logo.png" alt="logo"></a><ul class="nav"><li><a href="javascript:;">首页</a></li><li><a href="javascript:;">关于仁德</a><ul class="sub_nav"><li><a href="javascript:;">二级项目</a></li><li><a href="javascript:;">二级项目</a></li></ul></li><li class="active"><a href="javascript:;">公益项目</a><ul class="sub_nav"><li><a href="javascript:;">二级项目</a></li><li><a href="javascript:;">二级项目</a></li><li><a href="javascript:;">二级项目</a></li></ul></li><li><a href="javascript:;">信息公开</a></li><li><a href="javascript:;">加入我们</a></li></ul></div></header><script type="text/javascript" src="../../../vendor/js/jquery.min.js"></script><script>$("#header .nav>li").hover(function(){
 			$(this).children('ul').stop(true,true).slideDown(300);
 		},function(){
 			$(this).children('ul').stop(true,true).slideUp(300);
