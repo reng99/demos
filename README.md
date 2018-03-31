@@ -53,6 +53,10 @@ $ npm run build
 
 ![gobang_demo.gif](./images/gobang_demo.gif)
 
+[6. 二级导航展示](http://reng99.cc/demos/dist/html/secondNav/)线上地址
+
+![secondNav_demo.gif](./images/secondsNav_demo.gif)
+
 ## 遗留的问题
 
 1. npm run dev 的css文件的背景图的路径不正确，待改正
