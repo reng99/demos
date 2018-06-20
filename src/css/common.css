@@ -15,7 +15,7 @@ a{
     text-decoration:none;
     cursor: pointer;
 }
-a:hover{color:#09c7d1;}
+a:hover{color:#09c7d1;text-decoration: underline;}
 em{font-style:normal;}
 li{list-style: none;}
 img{border:0;vertical-align: middle;}
