@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<title>模态框</title>
+	<link rel="stylesheet" href="../common.css">
+	<link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <a id="showPopLayer">点击，弹出模态框</a>
+    <div id="pop">
+        <div class="layer"></div>
+        <div class="container">
+            <h3 class="title">欢迎登录<span class="close">&times;</span></h3>
+            <ul>
+                <li><input type="text" placeholder="请输入用户名" /></li>
+                <li><input type="password" placeholder="请输入密码" /></li>
+                <li><button class="login">登录</button></li>
+            </ul>
+        </div>
+    </div>
+    <script src="../../vendor/js/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
