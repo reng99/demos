@@ -28,3 +28,6 @@
 
 ![secondNav_demo.gif](./images/secondNav_demo.gif)
 
+### 许可证
+
+[MIT](https://opensource.org/licenses/MIT)
