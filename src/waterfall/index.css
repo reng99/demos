@@ -1,0 +1,21 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #ccc;
+}
+#box{
+	position: relative;
+}
+img{
+	width: 190px;
+	display: block;
+	margin: 0 auto;
+}
+.item{
+	/*margin: 10px 0 0 10px;*/
+	position: absolute;
+	width: 200px;
+	box-shadow: 2px 2px 2px #999;
+}
