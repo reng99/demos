@@ -2,7 +2,7 @@
     $(function(){
         // 开始和结束的时间戳
         var nowTimeStamp = new Date().getTime();
-        var endTimeStamp = new Date(2019, 1, 1).getTime();
+        var endTimeStamp = new Date(2019,0,1).getTime(); // 月份从0开始，0是一月份
         var duringSeconds = Math.floor((endTimeStamp-nowTimeStamp)/1000);
         var counter = null;
 
@@ -36,7 +36,7 @@
                 duringSeconds--;
                 _this.timeSeconds = duringSeconds % 60;
                 _this.timeMinutes = Math.floor(duringSeconds/60) % 60;
-                _this.timeHour = Math.floor(duringSeconds/(60 * 60)) % 60;
+                _this.timeHour = Math.floor(duringSeconds/(60 * 60)) % 24;
                 _this.timeDay = Math.floor(duringSeconds/(60 * 60 * 24));
                 dayDom.text(_this.timeDay);
                 hourDom.text(_this.timeHour);
