@@ -1,3 +1,40 @@
 #countdown{
-    
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 160px;
+}
+
+#countdown .title{
+    color: #09c7d1;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#countdown .time-manager{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 28px;
+}
+
+/* li偶数 */
+#countdown .time-manager li:nth-of-type(even){
+    color: #666;
+    font-size: 16px;
+    padding: 0 5px;
+}
+/* li奇数 */
+#countdown .time-manager li:nth-of-type(odd){
+    color: #09c7d1;
+}
+
+#countdown  .arrive-hint{
+    color: red;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    display: none;
 }
