@@ -1,0 +1,93 @@
+@keyframes run{
+    0%{
+        background-position: 0 0;
+    }
+    8.333%{
+        background-position: -140px 0;
+    }
+    16.666%{
+        background-position: -280px 0 ;
+    }
+    25.0%{
+        background-position: -420px 0 ;
+    }
+    33.333%{
+        background-position: -560px 0 ;
+    }
+    41.666%{
+        background-position: -700px 0 ;
+    }
+    50.0%{
+        background-position: -840px 0 ;
+    }
+    58.333%{
+        background-position: -980px 0 ;
+    }
+    66.666%{
+        background-position: -1120px 0 ;
+    }
+    75.0%{
+        background-position: -1260px 0 ;
+    }
+    83.333%{
+        background-position: -1400px 0 ;
+    }
+    91.666%{
+        background-position: -1540px 0 ;
+    }
+    100%{
+        background-position: 0 0 ;
+    }
+}
+@-webkit-keyframes run{
+    0%{
+        background-position: 0 0;
+    }
+    8.333%{
+        background-position: -140px 0;
+    }
+    16.666%{
+        background-position: -280px 0 ;
+    }
+    25.0%{
+        background-position: -420px 0 ;
+    }
+    33.333%{
+        background-position: -560px 0 ;
+    }
+    41.666%{
+        background-position: -700px 0 ;
+    }
+    50.0%{
+        background-position: -840px 0 ;
+    }
+    58.333%{
+        background-position: -980px 0 ;
+    }
+    66.666%{
+        background-position: -1120px 0 ;
+    }
+    75.0%{
+        background-position: -1260px 0 ;
+    }
+    83.333%{
+        background-position: -1400px 0 ;
+    }
+    91.666%{
+        background-position: -1540px 0 ;
+    }
+    100%{
+        background-position: 0 0 ;
+    }
+}
+
+
+
+#frame-animation{
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    background: url('http://omu538iq8.bkt.clouddn.com/github/demos/animation.png');
+    animation: run 1s steps(1,start) infinite;
+        -webkit-animation: run 1s steps(1,start) infinite;
+}
