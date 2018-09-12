@@ -32,6 +32,10 @@
 
 ![countdown_demo.gif](./images/countdown_demo.gif)
 
+[8.简单帧动画](http://reng99.cc/demos/src/frameAnimation/)线上地址
+
+![simple_frame_animation_demo.gif](./images/simple_frame_animation_demo.gif)
+
 ### 许可证
 
 [MIT](https://opensource.org/licenses/MIT)
