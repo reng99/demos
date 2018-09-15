@@ -11,14 +11,14 @@
   	window.onload = function(){
   		progress(100,[1,5],10,function(){
   			window.setTimeout(function(){
-				  var timer0 = setInterval(function(){
-					  if($loading.style.opacity!=0){
-						  $loading.style.opacity -= 0.1;
-					  }else{
-						$loading.style.display = "none";
-						clearInterval(timer0);
-					  }
-				  },60);
+				  // var timer0 = setInterval(function(){
+					 //  if($loading.style.opacity!=0){
+						//   $loading.style.opacity -= 0.1;
+					 //  }else{
+						// $loading.style.display = "none";
+						// clearInterval(timer0);
+					 //  }
+				  // },60);
   			},600);
   		})
   	}
@@ -38,7 +38,7 @@
 	  			progress(_dist,speed,delay,callback);
 	  		}
 			if(prg>99){
-				$progress.innerHTML = parseInt(prg) + "%";
+				$progress.innerHTML = '加载完成 '+parseInt(prg) + "%";
 			}else{
 				$progress.innerHTML = '加载中 '+ parseInt(prg) + "%";
 			}
