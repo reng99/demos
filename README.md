@@ -36,6 +36,10 @@
 
 ![simple_frame_animation_demo.gif](./images/simple_frame_animation_demo.gif)
 
+[9.伪加载](http://reng99.cc/demos/src/loading/)线上地址
+
+![loading_demo.gif](./images/loading_demo.gif)
+
 ### 许可证
 
 [MIT](https://opensource.org/licenses/MIT)
