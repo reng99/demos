@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8"/>
 	<title>audio demo</title>
+	<link rel="stylesheet" href="../common.css">
+	<link rel="stylesheet" href="./index.css">
 </head>
 <body>
-<h1>this is the audio demo. Need To Complete!</h1>
+<div id="audio">
+	demo:{{demo}}
+</div>
+<script src="../../vendor/js/vue.min.js"></script>
+<script>
+	var vm = new Vue({
+		el: "#audio",
+		data: {
+			demo: 'this is the demo',
+		}
+	})
+</script>
 </body>
 </html>
