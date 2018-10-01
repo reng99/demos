@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <title>休闲游戏--五子棋哈</title>
+	<meta name="viewport"/>
+    <title>前端移动端截图工具</title>
     <link rel="stylesheet" type="text/css" href="../common.css">
     <link rel="stylesheet" href="./index.css">
 </head>
 	<div id="html2canvas">
 		<h3 id="title">前端移动端截图工具</h3>
+		<div class="btn-shot">点击截取</div>
+		<p class="hint">要截取的文字&nbsp;:</p>
+		<div id="shotarea">
+			示范文字--爱你哦 @-@～
+			<img src="https://img-fe.ggwan.com/images/4e9ec29f215f2b-750x1334.png" alt="">
+		</div>
+		<!-- 使用canvas做截图的中转 -->
+		<canvas id="canvas"></canvas>
+		<p class="hint">截取后的图片&nbsp;:</p>
+		<div id="shotresult"></div>
 	</div>
+	<script type="text/javascript" src="../../vendor/js/jquery.min.js"></script>
 	<script type="text/javascript" src="./html2canvas.min.js"></script>
 	<script src='./index.js'></script>
 </body>

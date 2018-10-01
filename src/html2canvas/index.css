@@ -1,3 +1,36 @@
-#html2canvas{
+#html2canvas {
+	max-width: 32rem;
+	margin: 0 auto;
+	height: auto;
+	overflow: hidden;
+}
+
+#html2canvas .btn-shot {
 	background: red;
+	width: 5rem;
+	height: 1.4rem;
+	line-height: 1.4rem;
+	text-align: center;
+	font-size: .8rem;
+}
+
+#html2canvas .hint{
+	font-size: .7rem;
+	text-align: left;
+	margin: .8rem 0;
+}
+
+#title{
+	font-size: 1.2rem;
+	text-align: center;
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+}
+
+#shotarea{
+	background: #999;
+	width: 100%;
+	height: auto;
+	font-size: .8rem;
+	text-align: center;
 }
