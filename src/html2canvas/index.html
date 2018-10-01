@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 	<div id="html2canvas">
-		<h3 id="title">前端移动端截图工具</h3>
+		<h3 id="title">前端移动端截图工具html2canvas</h3>
 		<div class="btn-shot">点击截取</div>
-		<p class="hint">要截取的文字&nbsp;:</p>
-		<div id="shotarea" style="font-weight: bolder;">
-			示范文字--爱你哦 @-@～
-			<img src="https://img-fe.ggwan.com/images/4e9ec29f215f2b-750x1334.png" style="width: 10rem;height: auto;" alt="">
+		<p class="hint">要截取的内容&nbsp;:</p>
+		<div id="shotarea">
+			<p>示范文字--爱你哦 @-@～</p>
+			<img src="https://img-fe.ggwan.com/images/ed581d5ee4760f-279x152.png" style="display: block;width: 100%;height: auto;" alt="">
 		</div>
-		<!-- 使用canvas做截图的中转 -->
-		<canvas id="canvas"></canvas>
 		<p class="hint">截取后的图片&nbsp;:</p>
 		<div id="shotresult"></div>
+
+		<!-- 使用canvas做截图的中转 -->
+		<canvas id="canvas"></canvas>
 	</div>
 	<script type="text/javascript" src="../../vendor/js/jquery.min.js"></script>
 	<script type="text/javascript" src="./html2canvas.min.js"></script>

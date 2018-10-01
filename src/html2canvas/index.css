@@ -6,31 +6,43 @@
 }
 
 #html2canvas .btn-shot {
-	background: red;
-	width: 5rem;
-	height: 1.4rem;
-	line-height: 1.4rem;
+	background: #09c7d1;
+	width: 6rem;
+	height: 1.8rem;
+	line-height: 1.8rem;
 	text-align: center;
-	font-size: .8rem;
+	font-size: .76rem;
+	margin: 0 auto;
+	border-radius: .8rem;
+	color: #fff;
+	margin-bottom: 3rem;
 }
 
 #html2canvas .hint{
-	font-size: .7rem;
+	font-size: .9rem;
 	text-align: left;
 	margin: .8rem 0;
+	color: #09c7d1;
+	font-size: bolder;
+	text-align: center;
 }
 
 #title{
 	font-size: 1.2rem;
 	text-align: center;
-	margin-top: 3rem;
+	margin-top: 3.6rem;
 	margin-bottom: 2rem;
 }
 
 #shotarea{
-	background: #999;
+	background: #1C0F20;
 	width: 100%;
 	height: auto;
+	padding: .4rem 0;
+}
+#shotarea p{
 	font-size: .8rem;
 	text-align: center;
+	color: #fff;
+	font-weight: bolder;
 }
