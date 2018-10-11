@@ -35,3 +35,8 @@ function _getStore(name){
 }
 
 // 移除localstorage
+
+export const removeStore = ({name}) => {
+    if(!name) return;
+    window.localStorage.removeItem(name);
+}
