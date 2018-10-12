@@ -1,4 +1,25 @@
-// 先占坑
+
+// 生成过期时间
+function expiry(val){
+    if(!val){
+        return null;
+    }
+    let interval = parseInt(val);
+    let unit = val.replace(interval,'');
+    if('d' === unit){
+        interval = interval * 24 * 60 * 60 * 1000;
+    }
+    if('h' === unit){
+        interval = interval * 60 * 60 * 1000;
+    }
+    if('m' === unit){
+        interval = interval * 60 * 1000;
+    }
+    if('s' ===unit){
+        interval = interval * 1000;
+    }
+    return Date.now() + interval;
+}
 
 // 存储localstorage
 export const setStore = ({name,key,content,options}) => {
