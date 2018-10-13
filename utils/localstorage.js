@@ -1,3 +1,15 @@
+// 缓存版本
+const LOCAL_VERSION = '1.0.0';
+(function(){
+    let localVersion = window.localStorage.getItem('LOCAL_VERSION');
+    if(localVersion){
+        if(localVersion!==LOCAL_VERSION){
+            window.localStorage.clear();
+        }
+    }else{
+        window.localStorage.setItem('LOCAL_VERSION',LOCAL_VERSION);
+    }
+})();
 
 // 生成过期时间
 function expiry(val){
