@@ -40,7 +40,7 @@ function swap(arr,index1,index2){
  * 清空数据
  */
 function clear(){
-    for(var i = 0 ; i < this.dataStore.lenght; ++i){
+    for(var i = 0 ; i < this.dataStore.length; ++i){
         this.dataStore[i] = 0;
     }
 }
@@ -57,7 +57,13 @@ function toString() {
  */
 function shellSort(){
     for (var g = 0; g < this.gaps.length; ++g){
-        console.log(this.gaps[g]);
+        for(var i = this.gaps[g] ; i < this.dataStore.length; ++i){
+            var temp = this.dataStore[i];
+            for(var j = i;j >= this.gaps[g] && this.gaps[g] && this.dataStore[j-this.gaps[g]] > temp; j -= this.gaps[g]){
+                this.dataStore[j] = this.dataStore[j - this.gaps[g]];
+            }
+            this.dataStore[j] = temp;
+        }
     }
 }
 
@@ -69,4 +75,4 @@ var mynums = new TestArray(numElements);
 mynums.setData();
 console.log('设置数据为: ' + mynums.toString());
 mynums.shellSort();
-// console.log('设置数据为: ' + mynums.toString());
+console.log('设置数据为: ' + mynums.toString());

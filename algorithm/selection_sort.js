@@ -39,7 +39,7 @@ function swap(arr,index1,index2){
  * 清空数据
  */
 function clear(){
-    for(var i = 0 ; i < this.dataStore.lenght; ++i){
+    for(var i = 0 ; i < this.dataStore.length; ++i){
         this.dataStore[i] = 0;
     }
 }
