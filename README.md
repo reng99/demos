@@ -44,7 +44,7 @@
 
 ![html2canvas_demo.gif](./images/html2canvas_demo.gif)
 
-[11.加载效果版本二](http://reng99.cc/demos/src/loadingv2/)线上地址 （体验更好效果，请勾选浏览器的Fast 3G进行验证）
+[11.加载效果版本二](http://reng99.cc/demos/src/loadingv2/)线上地址 （体验更好效果，请勾选浏览器的Disable cache 和 Fast 3G进行验证）
 
 ![loading_version2_demo.gif](./images/loading_version2_demo.gif)
 
