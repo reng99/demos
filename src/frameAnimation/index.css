@@ -87,7 +87,7 @@
     width: 140px;
     height: 140px;
     margin: 0 auto;
-    background: url('http://omu538iq8.bkt.clouddn.com/github/demos/animation.png');
+    background: url('./animation.png');
     animation: run 1s steps(1,start) infinite;
         -webkit-animation: run 1s steps(1,start) infinite;
 }
