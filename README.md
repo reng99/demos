@@ -50,7 +50,8 @@
 
 ### 关于我
 
-请戳[关于我](http://reng99.cc/about/)
+请戳[关于我](http://reng99.cc/about/) [文档简历](./resume/2018_03_04.pdf)
+
 
 ### 许可证
 
