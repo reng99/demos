@@ -1,0 +1,14 @@
+#canvas{display: block;margin: 0 auto;margin-top: 40px;}
+#controller{margin: 0 auto;}
+.op_btn{float: right;margin: 10px 0 0 10px;border: 2px solid #aaa;width: 80px;height: 26px;line-height: 26px;font-size: 14px;text-align: center;border-radius: 5px 5px;cursor: pointer;background-color: white;font-weight: bold;font-family: Microsoft Yahei, Arial}
+.op_btn:hover{background-color: #def;  }
+.clearfix{clear: both;}
+.color_btn{float: left;margin: 10px 10px 0 0;border: 5px solid white;width: 20px;height: 20px;border-radius: 5px 5px;cursor: pointer;}
+.color_btn:hover{border: 5px solid violet;}
+.color_btn_selected{border: 5px solid blueviolet;}
+#black_btn{background-color: black;}
+#blue_btn{background-color: blue;}
+#green_btn{background-color: green;}
+#red_btn{background-color:red;}
+#orange_btn{background-color: orange;}
+#yellow_btn{background-color: yellow;}
