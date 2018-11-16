@@ -48,6 +48,10 @@
 
 ![loading_version2_demo.gif](./images/loading_version2_demo.gif)
 
+[12.粗略手写版](http://reng99.cc/demos/src/handwriting/)线上地址
+
+![handwriting_demo.gif](./images/handwriting_demo.gif)
+
 ### 关于我
 
 请戳[关于我](http://reng99.cc/about/) [文档简历](./resume/2018_03_04.pdf)
