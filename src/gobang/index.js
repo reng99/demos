@@ -42,6 +42,7 @@ class Gobang {
         const {count,padding,borderColor} = options.gobangStyle;
         this.chessboard.width = this.chessboard.height = padding * count;
         context.strokeStyle = borderColor;
+        context.lineWidth = 2;
         
         for(var i = 0; i < count; i++){
             context.moveTo(15 + i * padding , 15);
@@ -220,6 +221,7 @@ class Gobang {
     fixchessboard (a , b, c , d , e , f , g , h){
         const context = this.chessboard.getContext('2d');
         context.beginPath();
+        context.lineWidth = 2;
         context.moveTo(a , b);
         context.lineTo(c , d);
         context.moveTo(e, f);
