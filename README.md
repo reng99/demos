@@ -52,10 +52,9 @@
 
 ![handwriting_demo.gif](./images/handwriting_demo.gif)
 
-### 关于我
+### 赞助
 
-请戳[关于我](http://reng99.cc/about/) [文档简历](./resume/2018_03_04.pdf)
-
+[捐助传送门](https://github.com/reng99/blogs/blob/master/src/other/donate.md)
 
 ### 许可证
 
