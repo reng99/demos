@@ -3,15 +3,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>瞬变小组</title>
+    <title>switch team</title>
     <!-- <title>How to Change Things When Change Is Hard</title> -->
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./vendor/swiper.min.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/slide_01.css">
+    <link rel="stylesheet" href="./css/slide_02.css">
+    <link rel="stylesheet" href="./css/slide_07.css">
 </head>
 <body>
-    <!-- Swiper -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide slide_01">
@@ -22,8 +23,11 @@
                     <p class="text-en">How to Change Things When Change Is Hard</p>
                 </div>
             </div>
-            <div class="swiper-slide slide_02" style="position: relative;background: url('imgs/sea_king.jpg') no-repeat center center;">
-                <div style="color: #f00;">吃个爆米花，看个电影！</div>
+            <div class="swiper-slide slide_02" style="position: relative;">
+                <div class="text-wrapper">
+                    <h3 class="title">小调查</h3>
+                    <p class="desc">吃着爆米花，喝着肥宅快乐水（汽水），看个电影 --《海王》</p>
+                </div>
                 <img src="imgs/logo.png" alt="logo" class="logo logo-not-special">
             </div>
             <div class="swiper-slide slide_03">
@@ -43,7 +47,26 @@
                     <img src="imgs/logo.png" alt="logo" class="logo logo-not-special">
             </div>
             <div class="swiper-slide slide_07">
-                <div>大象、骑象人、道路</div>
+                <div class="text-wrapper">
+                    <dl>
+                        <dt>指挥骑象人--</dt>
+                        <dd><b>指明目标:&nbsp;</b>预先指明方向和原因大有助益</dd>
+                        <dd><b>找到亮点:&nbsp;</b>找出成功的案例，复制推广亮点</dd>
+                        <dd><b>制定关键举措:&nbsp;</b>无需高瞻远瞩，着眼于关键步骤</dd>
+                    </dl>
+                    <dl>
+                        <dt>激励大象--</dt>
+                        <dd><b>找到感觉:&nbsp;</b>只有头脑知道未必能改变，必须形成感觉</dd>
+                        <dd><b>缩小改变的幅度:&nbsp;</b>分解改变步骤，消除大象恐惧</dd>
+                        <dd><b>影响他人:&nbsp;</b>建立新的认同感，灌输成长心态</dd>
+                    </dl>
+                    <dl>
+                        <dt>营造路径--</dt>
+                        <dd><b>调整环境:&nbsp;</b>情景影响行为，设法改变环境</dd>
+                        <dd><b>培养习惯:&nbsp;</b>形成习惯则不费力，设法鼓励培养习惯</dd>
+                        <dd><b>召集伙伴:&nbsp;</b>行为具有传染力，设法号召众人</dd>
+                    </dl>
+                </div>
                     <img src="imgs/logo.png" alt="logo" class="logo logo-not-special">
             </div>
             <div class="swiper-slide slide_08">
@@ -58,13 +81,12 @@
                 <canvas id="lastView" width="1920" height="1000"  style="position:absolute;" style="width: 100%;height: 100%;"></canvas>
                 <div class="text-wrapper">
                     <img src="imgs/logo.png" alt="" class="logo">
-                    <p>感谢@～@</p>
-                    <p>- by 瞬变小组</p>
-                    <p style="text-decoration: underline;">幻君、浩华、瑾之、佩兰、子房、慧泽、羽敏、春分、东云、清川、嘉明【排名不分先后】</p>
+                    <p>感谢&nbsp;@～@</p>
+                    <p style="font-size: 16px;font-weight: normal;margin-top: 16px;">- by 瞬变小组</p>
+                    <p style="font-size: 16px;font-weight: normal;margin-top: 6px;">幻君、浩华、瑾之、佩兰、子房、慧泽、羽敏、春分、东云、清川、嘉明【排名不分先后】</p>
                 </div>
             </div>
         </div>
-        <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
     </div>
     <script src="./vendor/swiper.min.js"></script>

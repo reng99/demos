@@ -1,0 +1,24 @@
+.slide_02{
+    background: url('../imgs/sea_king.jpg') no-repeat center center;
+}
+
+.slide_02 .text-wrapper{
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 30px;
+    border: 1px solid #0099CC;
+    box-shadow:4px 4px 10px #0099CC;
+    color: #000;
+}
+
+.slide_02 .text-wrapper .title{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.slide_02 .text-wrapper .desc{
+    margin: 0;
+    font-size: 20px;
+    font-weight: normal;
+}
+

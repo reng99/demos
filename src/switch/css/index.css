@@ -6,6 +6,8 @@
   text-align: center;
   font-size: 18px;
   background: #000;
+  font-size: 32px;
+  font-weight: bolder;
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -31,11 +33,11 @@
   background: #000;
 }
 .swiper-wrapper .slide_02{
-  background: -webkit-linear-gradient(#000, #333); 
+  /* background: -webkit-linear-gradient(#000, #0099CC);  */
   /* background: -o-linear-gradient(#000, #fff); 
   background: -moz-linear-gradient(#000, #fff); 
   background: linear-gradient(#000, #fff);  */
-}
+} 
 .swiper-wrapper .slide_03{
   background: -webkit-linear-gradient(#0099CC, #FFCC99); 
 }
