@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>瞬变小组</title>
+    <!-- <title>How to Change Things When Change Is Hard</title> -->
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./vendor/swiper.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/slide_01.css">
+</head>
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide_01">
+                <canvas id="mainView" width="1920" height="1000"  style="position:absolute;" style="width:100%;height: 100%;"></canvas>
+                <div class="text-wrapper">
+                    <img src="imgs/logo.png" alt="" class="logo">
+                    <h3 class="text-ch">瞬&nbsp;变</h3>
+                    <p class="text-en">How to Change Things When Change Is Hard</p>
+                </div>
+            </div>
+            <div class="swiper-slide slide_02" style="position: relative;background: url('imgs/sea_king.jpg') no-repeat center center;">
+                <div style="color: #f00;">吃个爆米花，看个电影！</div>
+                <img src="imgs/logo.png" alt="logo" class="logo logo-not-special">
+            </div>
+            <div class="swiper-slide slide_03">
+                <div>食物容器越大，观众的进食量越大。</div>
+                    <img src="imgs/logo.png" alt="logo" class="logo logo-not-special">
+            </div>
+            <div class="swiper-slide slide_04">
+                <div>看似顽固抗拒，实则方向不明 --理性</div>
+                    <img src="imgs/logo.png" alt="logo" class="logo logo-not-special">
+            </div>
+            <div class="swiper-slide slide_05">
+                <div>看似懒于改变，实则精疲力竭 --感性</div>
+                    <img src="imgs/logo.png" alt="logo" class="logo logo-not-special">
+            </div>
+            <div class="swiper-slide slide_06">
+                <div>看似人的问题，实则情境问题 --营造路径</div>
+                    <img src="imgs/logo.png" alt="logo" class="logo logo-not-special">
+            </div>
+            <div class="swiper-slide slide_07">
+                <div>大象、骑象人、道路</div>
+                    <img src="imgs/logo.png" alt="logo" class="logo logo-not-special">
+            </div>
+            <div class="swiper-slide slide_08">
+                <div>减肥问题/健身</div>
+                    <img src="imgs/logo.png" alt="logo" class="logo logo-not-special">
+            </div>
+            <div class="swiper-slide slide_09">
+                <div>2019年，你想改变什么？</div>
+                    <img src="imgs/logo.png" alt="logo" class="logo logo-not-special">
+            </div>
+            <div class="swiper-slide slide_10">
+                <canvas id="lastView" width="1920" height="1000"  style="position:absolute;" style="width: 100%;height: 100%;"></canvas>
+                <div class="text-wrapper">
+                    <img src="imgs/logo.png" alt="" class="logo">
+                    <p>感谢@～@</p>
+                    <p>- by 瞬变小组</p>
+                    <p style="text-decoration: underline;">幻君、浩华、瑾之、佩兰、子房、慧泽、羽敏、春分、东云、清川、嘉明【排名不分先后】</p>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <script src="./vendor/swiper.min.js"></script>
+    <script src="./vendor/createjs-2015.11.26.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/slide_01.js"></script>
+    <script src="./js/light.js"></script>
+    <script src="./js/last_slide.js"></script>
+</body>
+</html>

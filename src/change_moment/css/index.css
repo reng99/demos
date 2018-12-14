@@ -1,0 +1,73 @@
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #000;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-pagination span{
+  background: #fff;
+}
+
+/* about single slide */
+.swiper-wrapper .slide_01{
+  background: #000;
+}
+.swiper-wrapper .slide_02{
+  background: -webkit-linear-gradient(#000, #333); 
+  /* background: -o-linear-gradient(#000, #fff); 
+  background: -moz-linear-gradient(#000, #fff); 
+  background: linear-gradient(#000, #fff);  */
+}
+.swiper-wrapper .slide_03{
+  background: -webkit-linear-gradient(#0099CC, #FFCC99); 
+}
+.swiper-wrapper .slide_04{
+  background: -webkit-linear-gradient(#FFCC99, #FFCCCC); 
+}
+.swiper-wrapper .slide_05{
+  background: -webkit-linear-gradient(#FFCCCC, #996699); 
+}
+.swiper-wrapper .slide_06{
+  background: -webkit-linear-gradient(#996699, #CCCC99); 
+}
+.swiper-wrapper .slide_07{
+  background: -webkit-linear-gradient(#CCCC99, #666); 
+}
+.swiper-wrapper .slide_08{
+  background: -webkit-linear-gradient(#666, #333); 
+}
+.swiper-wrapper .slide_09{
+  background: -webkit-linear-gradient(#333, #000); 
+}
+
+.swiper-wrapper .logo{
+  display: block;
+  margin: 0 auto;
+}
+
+.swiper-wrapper .logo-not-special{
+  display: block;
+  width: 160px;
+  height: auto;
+  position: absolute; 
+  top: 20px;
+  left: 20px;
+}
