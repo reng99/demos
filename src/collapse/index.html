@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>collapse</title>
+    <link rel="stylesheet" href="../common.css">
+    <style>
+        .wrapper{
+            max-width: 500px; /*设置这里的最大的宽度*/
+            height: 140px; /*这个是single-item单个的高度120 + 10 * 2*/
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .single-item{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            justify-content: space-around;
+            padding: 0;
+            padding: 10px 0;
+        }
+        .single-item li{
+            width: 100px;
+            height: 120px;
+        }
+        .single-item li a{
+            width: 100px;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 1px solid #ccc;
+        }
+        .single-item li .avatar{
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            margin: 0 auto;
+        }
+        .single-item li p{
+            text-align: center;
+            color: #000;
+        }
+        #stretch{
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .text{
+            max-width: 500px;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p class="text"><span id="stretch">点击展开</span></p>
+    <div class="wrapper">
+        <ul class="single-item">
+            <li><a href="https://github.com/reng99"><img src="./avatar.jpg" class="avatar" /><p>avatar</p></a></li>
+            <li><a href="https://github.com/reng99"><img src="./avatar.jpg" class="avatar" /><p>avatar</p></a></li>
+            <li><a href="https://github.com/reng99"><img src="./avatar.jpg" class="avatar" /><p>avatar</p></a></li>
+            <li><a href="https://github.com/reng99"><img src="./avatar.jpg" class="avatar" /><p>avatar</p></a></li>
+        </ul>
+        <ul class="single-item">
+            <li><a href="https://github.com/reng99"><img src="./avatar.jpg" class="avatar" /><p>avatar</p></a></li>
+            <li><a href="https://github.com/reng99"><img src="./avatar.jpg" class="avatar" /><p>avatar</p></a></li>
+            <li><a href="https://github.com/reng99"><img src="./avatar.jpg" class="avatar" /><p>avatar</p></a></li>
+            <li><a href="https://github.com/reng99"><img src="./avatar.jpg" class="avatar" /><p>avatar</p></a></li>
+        </ul>
+        <ul class="single-item">
+            <li><a href="https://github.com/reng99"><img src="./avatar.jpg" class="avatar" /><p>avatar</p></a></li>
+            <li><a href="https://github.com/reng99"><img src="./avatar.jpg" class="avatar" /><p>avatar</p></a></li>
+            <li><a href="https://github.com/reng99"><img src="./avatar.jpg" class="avatar" /><p>avatar</p></a></li>
+            <li><a href="https://github.com/reng99"><img src="./avatar.jpg" class="avatar" /><p>avatar</p></a></li>
+        </ul>
+    </div>
+    <script src="../../vendor/js/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

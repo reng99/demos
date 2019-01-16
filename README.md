@@ -59,3 +59,7 @@
 [12. 休闲游戏-五子棋](http://reng99.cc/demos/src/gobang/)线上地址
 
 ![gobang_demo.gif](./images/gobang_demo.gif)
+
+[13. 展开和折叠功能](http://reng99.cc/demos/src/collapse/)线上地址
+
+![collapse_demo.gif](./images/collapse_demo.gif)
