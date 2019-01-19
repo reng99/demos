@@ -1,4 +1,7 @@
-## demos仓库说明
+[![issues](https://img.shields.io/github/issues/reng99/demos.svg)](https://github.com/reng99/demos/issues)
+[![forks](https://img.shields.io/github/forks/reng99/demos.svg)](https://github.com/reng99/demos/network/members)
+[![stars](https://img.shields.io/github/stars/reng99/demos.svg)](https://github.com/reng99/demos/stargazers)
+[![license](https://img.shields.io/github/license/reng99/demos.svg)](https://opensource.org/licenses/MIT)
 
 这个仓库是放上自己业余时间做的demos，时不时更新，链接地址请戳 [http://reng99.cc/demos/](http://reng99.cc/demos/)  
 
