@@ -3,9 +3,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>nav bar</title>
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <h1>nav bar</h1>
+    <header>
+        <div class="nav-bar">
+            <div class="logo"><img src="./logo.png" alt="logo"></div>
+            <span class="more-icon"><i class="fa fa-bars"></i></span>
+        </div>
+        <nav id="navbar">
+            <div class="logo"><img src="./logo.png" alt="logo"><span class="logo-text">嘉明</span></div>
+            <ul class="nav-tools">
+                <li class="active"><a href="javascript:;">首页</a></li>
+                <li class="sub-menu">
+                    <a href="javascript:;">游戏中心<i class="fa fa-angle-down"></i></a>
+                    <ul class="children">
+                        <li><a href="javascript:;">动作</a></li>
+                        <li><a href="javascript:;">休闲</a></li>
+                        <li><a href="javascript:;">角色扮演</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:;">FAQ</a></li>
+                <li><a href="javascript:;">历史更新</a></li>
+                <li><a href="javascript:;">关于</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script src="../../vendor/js/jquery.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
