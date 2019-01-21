@@ -66,3 +66,7 @@
 [13. 展开和折叠功能](http://reng99.cc/demos/src/collapse/)线上地址
 
 ![collapse_demo.gif](./images/collapse_demo.gif)
+
+[14. 可伸缩导航栏](http://reng99.cc/demos/src/navbar/)线上地址
+
+![navbar](./images/navbar_demo.gif)
