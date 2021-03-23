@@ -1,0 +1,71 @@
+.radar {
+  overflow: hidden;
+  position: relative;
+  margin: 200px auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #5ef2ff;
+  box-sizing: border-box;
+}
+
+.radar::before {
+  width: 100px; 
+  height: 200px;
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  box-sizing: border-box;
+  border-left: 1px solid #5ef2ff;
+}
+
+.radar::after {
+  width: 200px; 
+  height: 100px;
+  content: '';
+  display: block;
+  box-sizing: border-box;
+  border-bottom: 1px solid #5ef2ff;
+}
+
+.fan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 1px solid #5ef2ff;
+  width: 100px;
+  height: 100px;
+}
+
+.fan::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  top: -50%;
+  right: -50%;
+  transform-origin: 0% 100%;
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(to right, transparent, #5ef2ff);
+  border-image-slice: 3;
+  background: transparent;
+  background-image: linear-gradient(to right, transparent, #9bfdfd);
+  animation: rotateAnimate 2s linear infinite;
+}
+
+@keyframes rotateAnimate {
+  from {
+    transform: rotate(0deg) skew(-10deg)
+  }
+  to {
+    transform: rotate(360deg) skew(-10deg)
+  }
+}
