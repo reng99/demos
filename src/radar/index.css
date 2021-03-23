@@ -5,7 +5,7 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background: #fff;
+  background: transparent;
   border: 1px solid #5ef2ff;
   box-sizing: border-box;
 }
