@@ -3,7 +3,7 @@
 [![stars](https://img.shields.io/github/stars/reng99/demos.svg)](https://github.com/reng99/demos/stargazers)
 [![license](https://img.shields.io/github/license/reng99/demos.svg)](https://opensource.org/licenses/MIT)
 
-业余时间做的demos，时不时更新，链接地址请戳 [http://reng99.cc/demos/](http://reng99.cc/demos/)。存在的意义：方便快速开发类似的功能。欢迎补充...
+业余时间做的demos，时不时更新。存在的意义：方便快速开发类似的功能。欢迎补充...
 
 > 赞助
 
