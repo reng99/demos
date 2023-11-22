@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Workers Canvas Example</title>
+</head>
+<body>
+    <h1>Web Workers Canvas Example</h1>
+    <canvas id="myCanvas" width="400" height="400"></canvas>
+    <script>
+        // 创建 Web Worker
+        const worker = new Worker('worker.js');
+        console.log(worker, 'worker')
+
+        // 获取 canvas 元素
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+
+        setInterval(() => {
+          // 监听来自 Web Worker 的消息
+          worker.addEventListener('message', (event) => {
+              // 收到消息后，在主线程中绘制颜色
+              const color = event.data;
+              drawColor(color);
+          });
+
+          // 向 Web Worker 发送消息
+          worker.postMessage('generateColor');
+        }, 1000)
+
+        
+
+        // 绘制颜色到 canvas
+        function drawColor(color) {
+            ctx.fillStyle = color;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+        }
+    </script>
+</body>
+</html>
